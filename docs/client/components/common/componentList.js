@@ -46,6 +46,8 @@ import Carousel from '../../../../src/carousel';
 import CarouselReadme from '../../../../src/carousel/readMe.md';
 import ProgressBar from '../../../../src/progressbar';
 import ProgressBarReadme from '../../../../src/progressbar/readMe.md';
+import Pagination from '../../../../src/pagination';
+import PaginationReadme from '../../../../src/pagination/readMe.md';
 
 import {
   CardDefaultCode,
@@ -72,6 +74,7 @@ import {
   SliderDefaultCode,
   CarouselDefaultCode,
   ProgressBarDefaultCode,
+  PaginationDefaultCode,
 } from './DefaultCode';
 
 export const componentList = [
@@ -158,6 +161,12 @@ export const componentList = [
     docs: NavbarReadMe,
     component: Navbar,
     defaultCode: NavbarDefaultCode,
+  },
+  {
+    name: 'Pagination',
+    docs: PaginationReadme,
+    component: Pagination,
+    defaultCode: PaginationDefaultCode,
   },
   {
     name: 'Popover',
