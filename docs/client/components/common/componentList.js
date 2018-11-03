@@ -48,6 +48,8 @@ import ProgressBar from '../../../../src/progressbar';
 import ProgressBarReadme from '../../../../src/progressbar/readMe.md';
 import Pagination from '../../../../src/pagination';
 import PaginationReadme from '../../../../src/pagination/readMe.md';
+import Table from '../../../../src/table';
+import TableReadme from '../../../../src/table/readMe.md';
 
 import {
   CardDefaultCode,
@@ -75,6 +77,7 @@ import {
   CarouselDefaultCode,
   ProgressBarDefaultCode,
   PaginationDefaultCode,
+  TableDefaultCode,
 } from './DefaultCode';
 
 export const componentList = [
@@ -209,6 +212,12 @@ export const componentList = [
     docs: SnackbarReadme,
     component: Snackbar,
     defaultCode: SnackbarDefaultCode,
+  },
+  {
+    name: 'Table',
+    docs: TableReadme,
+    component: Table,
+    defaultCode: TableDefaultCode,
   },
   {
     name: 'TextInput',

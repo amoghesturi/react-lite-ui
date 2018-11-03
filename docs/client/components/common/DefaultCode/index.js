@@ -23,3 +23,4 @@ export { defaultCode as SliderDefaultCode } from './Slider';
 export { defaultCode as CarouselDefaultCode } from './Carousel';
 export { defaultCode as ProgressBarDefaultCode } from './ProgressBar';
 export { defaultCode as PaginationDefaultCode } from './Pagination';
+export { defaultCode as TableDefaultCode } from './Table';
