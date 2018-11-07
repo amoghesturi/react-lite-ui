@@ -35,7 +35,7 @@
   font-size: 24px;
   font-weight: bold;
   text-transform: uppercase;
-  color: var(--white);
+  color: $white;
   margin-right: 15px;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -51,8 +51,8 @@
   svg {
     max-width: 24px;
     max-height: 24px;
-    color: var(--white);
-    fill: var(--white);
+    color: $white;
+    fill: $white;
   }
 }
 :local(.leftIcon) {
@@ -83,7 +83,7 @@
   position: relative;
 }
 :local(.defaultColor) {
-  background-color: var(--cool-blue);
+  background-color: $cool-blue;
 }
 :local(.flat) {
   box-shadow: none;
@@ -91,7 +91,7 @@
 .navlinks {
   display: flex;
   align-items: center;
-  color: var(--white);
+  color: $white;
   font-size: 20px;
   font-weight: bold;
   text-transform: capitalize;
@@ -117,7 +117,7 @@
     & > * {
       width: 100%;
       &:hover {
-        background-color: var(--cool-blue-21);
+        background-color: $cool-blue-21;
       }
     }
   }
@@ -127,6 +127,6 @@
   .navbarMobileMenu {
     display: flex;
     flex-direction: column;
-    fill: var(--white);
+    fill: $white;
   }
 }
