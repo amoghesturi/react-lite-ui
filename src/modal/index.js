@@ -20,9 +20,17 @@ class Modal extends Component {
   }
 
   closeModal = () => {
-    this.setState({
-      open: false,
-    });
+    const modalWrapper = document.querySelector('#modalWrapper');
+    const modal = document.querySelector('#modal');
+    modalWrapper.classList.add('animation');
+    modal.classList.add('animation');
+    setTimeout(() => {
+      this.setState({
+        open: false,
+      });
+      modalWrapper.classList.remove('animation');
+      modal.classList.remove('animation');
+    }, 300);
   };
 
   renderModalTitle = (title) => {
@@ -75,6 +83,7 @@ class Modal extends Component {
       <div
         className={backdrop}
         onClick={closeOnBackdropClick ? this.closeModal : undefined}
+        id="modalWrapper"
       >
         {open && (
           <div id="modal" className={classes} onClick={e => e.stopPropagation()}>
