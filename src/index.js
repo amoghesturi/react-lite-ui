@@ -79,11 +79,3 @@ export default {
 //     </Popover>
 //   </div>
 // );
-
-// ReactDOM.render(
-//   <Navbar leftIcon={<MenuIcon />} title="logo">
-//     <DesktopView />
-//     <MobileView />
-//   </Navbar>,
-//   document.getElementById('index'),
-// );
