@@ -3,6 +3,7 @@ import { findDOMNode } from 'react-dom';
 import PropTypes from 'prop-types';
 import { themr } from 'react-css-themr';
 import cx from 'classnames';
+import { transitionEndEventName } from '../globals/helper';
 import defaultTheme from './theme.scss';
 import '../globals/fonts.scss';
 
@@ -29,14 +30,19 @@ class Modal extends Component {
     const modal = getDOMNode(this.modalRef);
     modalWrapper.classList.add('animation');
     modal.classList.add('animation');
-    setTimeout(() => {
-      modalWrapper.classList.remove('animation');
-      modal.classList.remove('animation');
-      this.setState({
-        open: false,
-      });
-    }, 300);
+    const transitionEnd = transitionEndEventName();
+    modalWrapper.addEventListener(transitionEnd, this.removeModal, false);
   };
+
+  removeModal = () => {
+    const modalWrapper = getDOMNode(this.modalWrapperRef);
+    const modal = getDOMNode(this.modalRef);
+    modalWrapper.classList.remove('animation');
+    modal.classList.remove('animation');
+    this.setState({
+      open: false,
+    });
+  }
 
   renderModalTitle = (title) => {
     const { theme } = this.props;
