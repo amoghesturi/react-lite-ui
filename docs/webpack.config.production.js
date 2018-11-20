@@ -29,6 +29,7 @@ module.exports = {
     ],
     alias: {
       'react-lite': path.resolve(`${__dirname}./../components`),
+      'react-css-themr': '@friendsofreactjs/react-css-themr',
     },
   },
   module: {
