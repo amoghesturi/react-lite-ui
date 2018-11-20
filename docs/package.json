@@ -10,6 +10,7 @@
     "deploy": "gh-pages -d build"
   },
   "dependencies": {
+    "@friendsofreactjs/react-css-themr": "^3.4.0",
     "babel-loader": "^7.1.4",
     "babel-standalone": "^6.7.7",
     "classnames": "^2.2.6",
@@ -26,7 +27,6 @@
     "postcss-loader": "^2.1.5",
     "prop-types": "^15.6.2",
     "react": "^16.4.1",
-    "react-css-themr": "^2.1.2",
     "react-dom": "^16.4.1",
     "react-flexbox-grid": "^2.1.2",
     "react-router": "^4.3.1",
