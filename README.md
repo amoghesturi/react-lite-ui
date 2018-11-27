@@ -1,4 +1,6 @@
-# react-lite-ui
+# react-lite-ui 
+
+### GET YOUR PR MERGED AND WIN BOUNTIES UPTO Rs.10,000
 
 <!-- Badges -->
 <!-- npm package verson and downloads info can be included once the package is published -->
